@@ -14,10 +14,8 @@ const Like_Button = () => {
     if (clickCount === 0) {
       setLiked(true);
     } else if (clickCount === 1) {
-      console.log(liked);
       setClickCount(0);
       setLiked(false);
-      console.log(liked);
     }
   }
 
@@ -28,7 +26,7 @@ const Like_Button = () => {
   }, [liked]);
 
   return (
-    <button onClick={handleOnClick} className="flex w-10 bg-MainGray">
+    <button onClick={handleOnClick} className="flex w-10">
       <Lottie
         animationData={LikedAnimation}
         loop={false}

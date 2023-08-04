@@ -14,8 +14,8 @@ const ProductCard = () => {
           <LikeButton />
         </div>
       </div>
-      <div className="flex flex-col items-start w-full">
-        <div className="flex justify-between">
+      <div className="flex flex-col items-start w-full px-2">
+        <div className="flex justify-between w-full">
           <h1>Product Name</h1>
           <h1>Price</h1>
         </div>
