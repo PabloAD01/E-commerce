@@ -4,6 +4,8 @@ import CategoriesCard from "./components/cards/CategoriesCard";
 import ProductCard from "./components/cards/ProductCard";
 import Header from "./components/navbar/Header";
 import DiscountCard from "./components/cards/DiscountCard";
+import BrandsCard from "./components/cards/BrandsCard";
+import CustomerServiceCard from "./components/cards/CustomerServiceCard";
 
 function App() {
   return (
@@ -40,11 +42,31 @@ function App() {
             </div>
             <div className="flex flex-col gap-5">
               <h1 className=" text-3xl font-bold text-black">
+                Choose By Brand
+              </h1>
+              <div className="grid grid-cols-4 grid-flow-row gap-4">
+                {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+                  <BrandsCard />
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h1 className=" text-3xl font-bold text-black">
                 Get Up To 70% Off
               </h1>
               <div className="flex justify-between gap-5">
                 {[1, 2, 3, 4].map((item) => (
                   <DiscountCard />
+                ))}
+              </div>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h1 className=" text-3xl font-bold text-black">
+                Services To Help You Shop
+              </h1>
+              <div className="flex px-4 gap-2">
+                {[1, 2, 3, 4].map((item) => (
+                  <CustomerServiceCard />
                 ))}
               </div>
             </div>
