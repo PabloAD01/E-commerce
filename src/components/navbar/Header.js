@@ -10,7 +10,9 @@ const Header = () => {
         </div>
         <div className="w-1/3 flex justify-around">
           <p className="w-full text-center">Get 50% Off on Selected Items</p>
-          <p className="w-full text-center">Shop Now</p>
+          <p className="w-full text-center flex items-center justify-center">
+            Shop Now
+          </p>
         </div>
         <div className="w-1/3 flex justify-center gap-5">
           <div className="flex items-center">
