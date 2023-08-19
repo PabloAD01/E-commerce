@@ -2,11 +2,12 @@ import "./App.css";
 import React, { useState } from "react";
 import CategoriesCard from "./components/cards/CategoriesCard";
 import ProductCard from "./components/cards/ProductCard";
-import Header from "./components/navbar/Header";
 import DiscountCard from "./components/cards/DiscountCard";
 import BrandsCard from "./components/cards/BrandsCard";
 import CustomerServiceCard from "./components/cards/CustomerServiceCard";
 import Footer from "./components/Footer";
+import SearchNav from "./components/navbar/SearchNav";
+import InfoNav from "./components/navbar/InfoNav";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <div className=" w-10/12">
         <div className="flex flex-col gap-3 w-full justify-center items-center flex-1 ">
           <div className="w-full">
-            <Header />
+            <InfoNav />
+            <SearchNav />
             <img
               className="flex w-full"
               src={require("./assets/images/hero_section.png")}
